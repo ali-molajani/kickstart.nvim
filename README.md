@@ -231,3 +231,6 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+# Additional configs to the kickstarter
+This a fork of my universal config for the nvim as my main editor across the operating systems.
+This config add complitation for the `python`, `rust`, `zig` by defualt.

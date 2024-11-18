@@ -660,6 +660,7 @@ require('lazy').setup({
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       require('mason-lspconfig').setup {
+        ensure_installed = { 'pyright', 'rust_analyzer', 'zls' },
         handlers = {
           function(server_name)
             local server = servers[server_name] or {}
@@ -784,7 +785,7 @@ require('lazy').setup({
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          ['<Tab>'] = cmp.mapping.confirm { select = true },
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
